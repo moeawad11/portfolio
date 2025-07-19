@@ -297,7 +297,7 @@
   }
 
   .items-grid span{
-    font-size: 0.5rem;
+    font-size: 0.4rem;
   }
   .skills-section{
     padding: 0 3rem;
@@ -353,4 +353,15 @@
 .footer-nav li a:focus {
   color: #ffd700;
   outline: none;
+}
+@media (max-width: 480px) {
+  .footer-nav {
+    gap:0.25rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav li {
+    flex: 1 1 auto;
+    text-align: center;
+  }
 }

@@ -10,6 +10,7 @@
   background-image: url('../images/background.gif');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
   color: white;
   display: flex;
@@ -17,7 +18,9 @@
   justify-content: center;
   text-align: center;
   padding: 0 1rem;
+  transition: background-size 1s ease, background-position 1s ease, height 1s ease;
 }
+
 
 .hero-content {
   background: rgba(0, 0, 0, 0.5);
@@ -84,7 +87,7 @@
 }
 
 .skills-content {
-  max-width: 900px;
+  max-width: 700px;
   width: 100%;
 }
 
@@ -92,7 +95,6 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-
 .subsection {
   margin-bottom: 3rem;
 }
@@ -109,7 +111,7 @@
   gap: 1rem 1rem;
   padding: 0;
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 120%;
 }
 
 
@@ -136,8 +138,8 @@
 
 /* Circular icon styling */
 .items-grid li img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid white;
@@ -146,7 +148,7 @@
 /* Skills */
 .skills-list {
   list-style: none;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -231,7 +233,7 @@
   }
   
   .skills-section {
-    padding: 3rem 1rem;
+    padding: 0rem 3rem;
   }
   
   .skills-section h2 {
@@ -240,13 +242,14 @@
   
   .subsection h3 {
     font-size: 1.5rem;
+    margin-top: 20px;
   }
   .items-grid li {
     font-size: 0.7rem;
   }
   .items-grid img{
-    width:50px;
-    height:auto;
+    width:60px !important;
+    height:60px !important;
   }
   .projects-section h2 {
     font-size: 2rem;
@@ -270,10 +273,10 @@
   }
 
   .items-grid {
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(35px, 1fr));
   }
   .items-grid li {
-    width: 100%;
+    width: 110%;
     padding: 0.5rem;
     font-size: 0.6rem;
     display: flex;
@@ -282,12 +285,15 @@
     gap: 0.3rem;
   }
   .items-grid img {
-    width: 40px !important;
-    height: 40px !important;
+    width: 35px !important;
+    height: 35px !important;
   }
 
   .items-grid span{
-    font-size: 0.55rem;
+    font-size: 0.5rem;
+  }
+  .skills-section{
+    padding: 0 3rem;
   }
   .skills-list li {
     background: #444;
@@ -298,9 +304,9 @@
     line-height: 1.4;
   }
   .skills-list li p {
-  margin: 0.5rem 0 0 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
+    margin: 0.5rem 0 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 
   .project h3 {

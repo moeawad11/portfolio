@@ -36,13 +36,40 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+  .hero-section{
+    height:90vh;
+  }
   .hero-name {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-description {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 700px) {
+  .hero-section{
+    height:60vh;
+  }
+  .hero-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-section{
+    height:50vh;
+  }
+  .hero-name {
     font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.7rem;
   }
 }
 
@@ -72,18 +99,19 @@
 
 .subsection h3 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .items-grid {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem 1rem;
   padding: 0;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 90%;
 }
+
 
 .items-grid li {
   background: #444;
@@ -91,8 +119,6 @@
   border-radius: 8px;
   font-weight: 600;
   font-size: 1.1rem;
-
-  /* Flex layout to center icon and text vertically */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,30 +143,6 @@
   border: 2px solid white;
   background-color: #222;
 }
-
-/* Responsive */
-@media (max-width: 700px) {
-  .items-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .skills-section {
-    padding: 3rem 1rem;
-  }
-  
-  .skills-section h2 {
-    font-size: 2rem;
-  }
-  
-  .subsection h3 {
-    font-size: 1.5rem;
-  }
-  
-  .items-grid li {
-    font-size: 1rem;
-  }
-}
-
 /* Skills */
 .skills-list {
   list-style: none;
@@ -222,9 +224,30 @@
   transform: scale(1.02);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
-
 /* Responsive */
 @media (max-width: 700px) {
+  .items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  
+  .skills-section {
+    padding: 3rem 1rem;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+  }
+  
+  .subsection h3 {
+    font-size: 1.5rem;
+  }
+  .items-grid li {
+    font-size: 0.7rem;
+  }
+  .items-grid img{
+    width:50px;
+    height:auto;
+  }
   .projects-section h2 {
     font-size: 2rem;
   }
@@ -235,6 +258,53 @@
 
   .project p {
     font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  .items-grid li {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .items-grid img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .items-grid span{
+    font-size: 0.55rem;
+  }
+  .skills-list li {
+    background: #444;
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .skills-list li p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  }
+
+  .project h3 {
+    font-size: 1.1rem;
   }
 }
 

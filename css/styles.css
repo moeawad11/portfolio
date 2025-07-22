@@ -314,9 +314,17 @@
     font-size: 0.95rem;
     line-height: 1.4;
   }
-
-  .project h3 {
-    font-size: 1.1rem;
+  .projects-section {
+    padding: 2rem 1rem;
+  }
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+  .project h3{
+    font-size: 0.8rem;
+  }
+  .project p{
+    font-size: 0.6rem;
   }
 }
 

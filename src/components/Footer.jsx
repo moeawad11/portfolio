@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="socialIcons">
         <a
-          href="https://www.linkedin.com/in/your-profile"
+          href="https://www.linkedin.com/in/mohammad-awad-87b6b1297"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
@@ -15,7 +15,7 @@ const Footer = () => {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/your-username"
+          href="https://github.com/moeawad11"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"

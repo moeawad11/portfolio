@@ -27,14 +27,13 @@ function About() {
               <div className="skill-category">
                 <h3>Languages</h3>
                 <ul>
-                  <li>Python</li>
                   <li>Java</li>
-                  <li>C/C++</li>
+                  <li>Python</li>
+                  <li>C++</li>
                   <li>C#</li>
+                  <li>C</li>
                   <li>JavaScript</li>
                   <li>SQL</li>
-                  <li>HTML</li>
-                  <li>CSS</li>
                 </ul>
               </div>
 
@@ -54,9 +53,8 @@ function About() {
                 <ul>
                   <li>Node.js</li>
                   <li>Express.js</li>
-                  <li>Java</li>
                   <li>C#</li>
-                  <li>Python</li>
+                  <li>ASP.NET</li>
                 </ul>
               </div>
 
@@ -65,7 +63,6 @@ function About() {
                 <ul>
                   <li>MySQL</li>
                   <li>PostgreSQL</li>
-                  <li>Oracle SQL</li>
                   <li>MongoDB</li>
                 </ul>
               </div>

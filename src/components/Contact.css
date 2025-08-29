@@ -1,0 +1,127 @@
+.contactSection {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.contactHeader {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(100, 108, 255, 0.05);
+  border: 1px solid rgba(100, 108, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+input,
+textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(100, 108, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #646cff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.errorInput {
+  border-color: #ff4d4d !important;
+}
+
+.errorMessage {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  text-align: left;
+}
+
+.submitButton {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  background: #646cff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  background: #535ef2;
+  transform: scale(1.03);
+}
+
+.submitButton:disabled {
+  background: rgba(100, 108, 255, 0.5);
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+}
+
+.success {
+  color: #00ff95;
+  background: rgba(0, 255, 150, 0.1);
+}
+
+.error {
+  color: #ff4d4d;
+  background: rgba(255, 80, 80, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 3rem 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactSection {
+    padding: 2rem 1rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+}

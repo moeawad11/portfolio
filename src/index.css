@@ -1,0 +1,18 @@
+/* index.css */
+:root {
+  --bg-color: #0a0a1a;
+  --primary-glow: #1193be;
+  --secondary-glow: #5705c2;
+  --text-color: #e0e0e0;
+  --text-muted: #88889a;
+  --card-bg: rgba(20, 20, 40, 0.6);
+  --border-color: rgba(0, 191, 255, 0.2);
+  --font-main: 'Space Grotesk', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}

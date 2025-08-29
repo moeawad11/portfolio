@@ -1,0 +1,47 @@
+.footer {
+  padding: 2rem 1rem;
+  background: rgba(100, 108, 255, 0.05);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  border-top: 1px solid rgba(100, 108, 255, 0.2);
+  margin-top: 3rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.socialIcons a {
+  color: #646cff;
+  font-size: 2rem;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.socialIcons a:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}
+
+copyright {
+  font-size: 0.9rem;
+  color: #dcdcdc;
+}
+
+@media (max-width: 768px) {
+  .socialIcons a {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .socialIcons a {
+    font-size: 1.8rem;
+    gap: 1.5rem;
+  }
+  .copyright{
+    font-size: 0.8rem;
+  }
+}

@@ -1,4 +1,4 @@
-import './Header.css';
+import "./Header.css";
 import React, { useState, useEffect } from "react";
 
 function Header() {
@@ -31,10 +31,24 @@ function Header() {
 
   return (
     <nav id="navbar">
-      <a href="#hero" className={activeSection === "hero" ? "active" : ""}>Home</a>
-      <a href="#about" className={activeSection === "about" ? "active" : ""}>About</a>
-      <a href="#projects" className={activeSection === "projects" ? "active" : ""}>Projects</a>
-      <a href="#contact" className={activeSection === "contact" ? "active" : ""}>Contact</a>
+      <a href="#hero" className={activeSection === "hero" ? "active" : ""}>
+        Home
+      </a>
+      <a href="#about" className={activeSection === "about" ? "active" : ""}>
+        About
+      </a>
+      <a
+        href="#projects"
+        className={activeSection === "projects" ? "active" : ""}
+      >
+        Projects
+      </a>
+      <a
+        href="#contact"
+        className={activeSection === "contact" ? "active" : ""}
+      >
+        Contact
+      </a>
     </nav>
   );
 }

@@ -29,18 +29,28 @@ const Contact = () => {
 
     setStatus("sending");
 
+    const templateParams = {
+      user_name: form.current.user_name.value,
+      name: form.current.user_name.value,
+      email: form.current.user_email.value,
+      user_email: form.current.user_email.value,
+      user_message: form.current.user_message.value,
+      time: new Date().toLocaleString(),
+    };
+
     emailjs
-      .sendForm(
+      .send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-        form.current,
+        templateParams,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
       .then(() => {
         setStatus("success");
         form.current.reset();
       })
-      .catch(() => {
+      .catch((err) => {
+        console.error("EmailJS error:", err);
         setStatus("error");
       });
   };

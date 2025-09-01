@@ -4,14 +4,14 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "BookNotes",
+    title: "Book Notes",
     description:
       "A web application for managing and organizing book notes with a clean UI and efficient workflows, allowing users to track their reading progress, store notes and reviews, and manage book entries easily.",
     tech: ["Node.js", "Express.js", "PostgreSQL", "EJS", "CSS", "JavaScript"],
     github: "https://github.com/moeawad11/BookNotes",
   },
   {
-    title: "Mobile App",
+    title: "home Nest",
     description:
       "A mobile application for browsing and managing real estate listings, featuring property categories, filters, and CRUD operations, enabling users to explore, save, and post properties seamlessly.",
     tech: ["PHP", "MySQL", "Java", "XML", "Android SDK"],

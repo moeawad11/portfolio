@@ -41,6 +41,9 @@ textarea {
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 input:focus,
@@ -48,6 +51,13 @@ textarea:focus {
   outline: none;
   border-color: #646cff;
   background: rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .errorInput {

@@ -33,6 +33,7 @@ function About() {
                   <li>C#</li>
                   <li>C</li>
                   <li>JavaScript</li>
+                  <li>TypeScript</li>
                   <li>SQL</li>
                 </ul>
               </div>
@@ -44,7 +45,7 @@ function About() {
                   <li>CSS</li>
                   <li>JavaScript</li>
                   <li>React.js</li>
-                  <li>Next.js</li>
+                  <li>TailwindCSS</li>
                 </ul>
               </div>
 
@@ -74,6 +75,9 @@ function About() {
                   <li>REST APIs</li>
                   <li>Linux</li>
                   <li>CI/CD</li>
+                  <li>Postman</li>
+                  <li>Swagger</li>
+                  <li>DevTools</li>
                 </ul>
               </div>
             </div>

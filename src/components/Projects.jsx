@@ -4,11 +4,11 @@ import "./Projects.css";
 
 const projects = [
   {
-    title: "Book Notes",
+    title: "Storynix",
     description:
-      "A web application for managing and organizing book notes with a clean UI and efficient workflows, allowing users to track their reading progress, store notes and reviews, and manage book entries easily.",
-    tech: ["Node.js", "Express.js", "PostgreSQL", "EJS", "CSS", "JavaScript"],
-    github: "https://github.com/moeawad11/BookNotes",
+      "A full-stack bookstore application for managing and purchasing books online. Features include secure authentication, role-based authorization, persistent shopping cart, checkout workflow, and an admin dashboard for managing inventory and orders.",
+    tech: ["React", "Node.js", "Express.js", "PostgreSQL"],
+    github: "https://github.com/moeawad11/Storynix",
   },
   {
     title: "Home Nest",
@@ -21,7 +21,7 @@ const projects = [
     title: "Portfolio",
     description:
       "My personal portfolio showcasing projects, skills, and contact information, built with React and responsive design, providing an interactive platform to present my work and professional profile effectively.",
-    tech: ["React.js", "Vite", "Vercel"],
+    tech: ["React", "Vite", "Vercel"],
     github: "https://github.com/moeawad11/portfolio",
   },
 ];
